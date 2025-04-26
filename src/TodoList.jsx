@@ -7,9 +7,7 @@ export function TodoList({ todos }) {
             {todos.map(todo => {
                 return (
                     <TodoItem
-                        id={todo.id}
-                        title={todo.title}
-                        completed={todo.completed}
+                        {...todo}
                         key={todo.id}
                     />
 
